@@ -1,0 +1,118 @@
+html,body{
+  font-family: 'Open Sans','Helvetica', sans-serif;
+  height: 100%;
+  //width: 100%;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  //background-color: $color-offWhite;
+}
+a, a:hover, a:active, a:visited, a:focus{
+  text-decoration:none;  }
+/*--Hacks for making design awesome--*/
+.no-margin{margin:0}
+.no-padding{padding: 0}
+.box{border: 1px solid red;  }
+.center{text-align: center;}
+/*--OG GRID--*/
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}
+.og-grid {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 22px;
+    margin-bottom: 22px;
+    width: 250px;
+    height: 292px;
+    a,img{
+      height: 158px;
+      width: auto;
+
+      outline: none;
+      display: block;
+      position: relative;
+    }
+
+  }
+}
+.btn{
+  border-radius:0;
+}
+/*--OG grid ends here--*/
+/*Shadows Designing*/
+
+.card {
+  -moz-box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  -webkit-box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.4s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover {
+  -moz-box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  -webkit-box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+/*--Basic Section Ends here---------------------------------------------------*/
+.wrapper{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.rounded{
+  border-radius: 100px;
+}
+//making element fix when touching top section ko css
+.menu{
+  position: relative;
+  background-color: $color-white;
+  z-index: 100;
+  border-bottom: 2px solid $color-offWhite;
+  //padding-bottom: 15px;
+  //margin-bottom: 20px;
+  //width: 100%;
+  //height: 100%;
+}
+.sticky {
+  width: 76.3%;
+  //margin-right: 8.85%;
+  top: 0;
+  position: fixed;
+}
+.menu2{
+  position: relative;
+  margin-top: -70px;
+  background-color: $color-white;
+  //padding-left: 20px;
+  //padding-right: 20px;
+  padding-top: 10px;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.sticky2 {
+  top: 0;
+  margin-top: 0;
+  position: fixed!important;
+}
+
+//removing spin of input type number
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
