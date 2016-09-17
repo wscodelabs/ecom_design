@@ -1,0 +1,45 @@
+
+#ignore these folders from being added to git
+
+node_modules/
+=======
+# yii console command
+/yii
+
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# auto generated assets dir
+/backend/web/assets
+/forntend/web/assets
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+#uploads
+/frontend/web/uploads
+
+**/scss
