@@ -108,7 +108,7 @@
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
-	background: #e85657;
+	background: rgba(255,255,255,0.7);
 }
 
 .morph-button-overlay.open .morph-content {
