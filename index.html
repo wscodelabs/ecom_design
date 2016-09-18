@@ -18,6 +18,11 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
     <script language="Javascript" type="text/javascript" src="js/smoothPageScroll.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/itemzoom/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/itemzoom/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/itemzoom/content.css" />
+    <script src="js/itemzoom/modernizr.custom.js"></script>
 </head>
 <body id="main">
 
@@ -154,7 +159,7 @@
                 </div><!--End of navbar-header-->
                 <div class="collapse navbar-collapse navHeaderCollapse1 pull-right">
                     <ul class="nav navbar-nav no-padding no-margin">
-                        <li><a href="#" onclick="openChatNav()">Chat <i class="fa fa-comments" aria-hidden="true"></i></a></li>
+                        <li><a href="#" id="btnChatNav">Chat <i class="fa fa-comments" aria-hidden="true"></i></a></li>
                         <li>
                             <div class="" style="padding-top: 14px;">
                                 <button class="" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -279,7 +284,7 @@
                             <i class="fa fa-th fa-2x" aria-hidden="true"></i>
                             <i class="fa fa-list fa-2x" aria-hidden="true"></i>
                             <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                         <span onclick="openNav()"><i class="fa fa-filter fa-2x" aria-hidden="true"></i></span>
+                         <span id="btnFilterNav"><i class="fa fa-filter fa-2x" aria-hidden="true"></i></span>
                         </span>
                     </div>
                 </div>
@@ -478,8 +483,8 @@
         </div>
     </div>
 </footer>
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div id="FilterNav" class="sidenav">
+    <a class="btnClose">&times;</a>
     <div class="l-wrapper">
         <div class="side-nav-wrapper center">
             <h4>Filters &nbsp <i class="fa fa-filter" aria-hidden="true"></i></h4>
@@ -500,7 +505,7 @@
     </div>
 </div>
 <div id="myChatnav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeChatNav()">&times;</a>
+    <a class="btnClose" >&times;</a>
     <div class="l-wrapper">
         <div class="side-chatNav-wrapper center">
             <h4>Chats &nbsp <i class="fa fa-comments" aria-hidden="true"></i></h4>

@@ -1,4 +1,3 @@
-
 #ignore these folders from being added to git
 
 node_modules/
@@ -41,5 +40,3 @@ phpunit.phar
 
 #uploads
 /frontend/web/uploads
-
-**/scss
