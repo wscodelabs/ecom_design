@@ -339,7 +339,7 @@
 .morph-button-sidebar {
 	position: fixed;
 	bottom: 50px;
-	right: 50px;
+	left: 50px;
 }
 
 .morph-button-sidebar > button {
@@ -354,8 +354,8 @@
 
 .morph-button-sidebar.open .morph-content {
 	top: 0 !important;
-	right: 0 !important;
-	width: 250px;
+	left: 0 !important;
+	width: 300px;
 	height: 100%;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;

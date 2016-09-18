@@ -40,3 +40,6 @@ phpunit.phar
 
 #uploads
 /frontend/web/uploads
+
+#my scsss codes
+/scss
