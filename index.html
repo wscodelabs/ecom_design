@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>Page Title</title>
+    <title>Amazing Store</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -19,13 +19,14 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
     <script language="Javascript" type="text/javascript" src="js/smoothPageScroll.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/itemzoom/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/itemzoom/component.css" />
-    <link rel="stylesheet" type="text/css" href="css/itemzoom/content.css" />
-    <script src="js/itemzoom/modernizr.custom.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="css/itemzoom/demo.css" />-->
+    <link rel="stylesheet" type="text/css" href="assets/ButtonComponentMorph/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/ButtonComponentMorph/css/content.css" />
+    <link rel="stylesheet" type="text/css" href="assets/ButtonComponentMorph/css/demo.css" />
+    <script src="assets/ButtonComponentMorph/js/modernizr.custom.js"></script>
 </head>
 <body id="main">
-
+<div id="container">
 <!-- Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog card" role="document">
@@ -483,6 +484,7 @@
         </div>
     </div>
 </footer>
+<div id="container" class="container"></div><!-- /container -->
 <div id="FilterNav" class="sidenav">
     <a class="btnClose">&times;</a>
     <div class="l-wrapper">
@@ -523,12 +525,102 @@
         </div>
     </div>
 </div>
-
-<!-- Use any element to open the sidenav -->
-
-
+<!--<div class="morph-button morph-button-sidebar morph-button-fixed">-->
+    <!--<button type="button"><span class="icon icon-cog">Settings Menu</span></button>-->
+    <!--<div class="morph-content">-->
+        <!--<div>-->
+            <!--<div class="content-style-sidebar">-->
+                <!--<span class="icon icon-close">Close the overlay</span>-->
+                <!--<h2>Settings</h2>-->
+                <!--<ul>-->
+                    <!--<li><a class="icon icon-camera" href="#">Default filters</a></li>-->
+                    <!--<li><a class="icon icon-server" href="#">Storage Use</a></li>-->
+                    <!--<li><a class="icon icon-heart" href="#">Favorites</a></li>-->
+                    <!--<li><a class="icon icon-zoom-in" href="#">Readability</a></li>-->
+                    <!--<li><a class="icon icon-microphone" href="#">Speech</a></li>-->
+                    <!--<li><a class="icon icon-cloud" href="#">Uploads</a></li>-->
+                    <!--<li><a class="icon icon-user" href="#">Profile</a></li>-->
+                    <!--<li><a class="icon icon-briefcase" href="#">Documents</a></li>-->
+                    <!--<li><a class="icon icon-globe" href="#">Global Options</a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+</div><!--End of container-->
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<script src="assets/ButtonComponentMorph/js/classie.js"></script>
+<script src="assets/ButtonComponentMorph/js/uiMorphingButton_fixed.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    (function() {
+        var docElem = window.document.documentElement, didScroll, scrollPosition,
+                container = document.getElementById( 'container' );
+
+        // trick to prevent scrolling when opening/closing button
+        function noScrollFn() {
+            window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+        }
+
+        function noScroll() {
+            window.removeEventListener( 'scroll', scrollHandler );
+            window.addEventListener( 'scroll', noScrollFn );
+        }
+
+        function scrollFn() {
+            window.addEventListener( 'scroll', scrollHandler );
+        }
+
+        function canScroll() {
+            window.removeEventListener( 'scroll', noScrollFn );
+            scrollFn();
+        }
+
+        function scrollHandler() {
+            if( !didScroll ) {
+                didScroll = true;
+                setTimeout( function() { scrollPage(); }, 60 );
+            }
+        };
+
+        function scrollPage() {
+            scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+            didScroll = false;
+        };
+
+        scrollFn();
+
+        var el = document.querySelector( '.morph-button' );
+
+        new UIMorphingButton( el, {
+            closeEl : '.icon-close',
+            onBeforeOpen : function() {
+                // don't allow to scroll
+                noScroll();
+                // push main container
+                classie.addClass( container, 'pushed' );
+            },
+            onAfterOpen : function() {
+                // can scroll again
+                canScroll();
+                // add scroll class to main el
+                classie.addClass( el, 'scroll' );
+            },
+            onBeforeClose : function() {
+                // remove scroll class from main el
+                classie.removeClass( el, 'scroll' );
+                // don't allow to scroll
+                noScroll();
+                // push back main container
+                classie.removeClass( container, 'pushed' );
+            },
+            onAfterClose : function() {
+                // can scroll again
+                canScroll();
+            }
+        } );
+    })();
+</script>
 </body>
 </html>
 

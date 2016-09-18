@@ -278,6 +278,7 @@ input::-webkit-inner-spin-button {
   color: #ffffff !important; }
 
 .form-control {
+  height: 20px;
   border-radius: 0;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
