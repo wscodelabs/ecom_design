@@ -32,7 +32,7 @@ input[type="password"]:focus,
 textarea:focus, 
 textarea.form-control:focus {
 	outline: 0;
-	background: #fff;
+	/*background: #fff;*/
     border: 1px solid #ccc;
     -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
 }
@@ -87,16 +87,3 @@ button.btn {
 /*button.btn.btn-previous,*/
 /*button.btn.btn-previous:focus,*/
 /*button.btn.btn-previous:active:focus, button.btn.btn-previous.active:focus { background: #bbb; }*/
-
-.sub-category-list{
-    display:none;
-}
-.categoryMain ul li{
-    color: #fbfbfb;
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 1.8em;
-}
-.categoryMain ul li:hover{
-    color: #94618E;
-}

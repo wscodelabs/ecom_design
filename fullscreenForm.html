@@ -5,96 +5,163 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fullscreen Form Interface</title>
-    <meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations" />
+    <meta name="description" content="" />
+
     <meta name="keywords" content="fullscreen form, css animations, distraction-free, web design" />
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <script src="https://use.fontawesome.com/6e65768810.js"></script>
-    <!--<link rel="stylesheet" type="text/css" href="assets/FullscreenForm/css/normalize.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/hover.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" href="css/wiz-form-elements.css">
+    <link rel="stylesheet" href="css/wiz-style.css">
     <script src="js/form/js/modernizr.custom.js"></script>
-
-    <!--<link rel="stylesheet" type="text/css" href="css/wiz-style.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/wiz-form-elements.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="css/hover.css">-->
-
 </head>
+
 <body id="fullFormbody">
-<div class="container">
+<div class="container no-padding no-margin">
     <div class="fs-form-wrap" id="fs-form-wrap">
-        <div class="fs-title">
-            <h1>Welcome to Amazing Store Quick Startup Wizard</h1>
-        </div>
-        <form id="myform" class="fs-form fs-form-full clearfix center" autocomplete="off">
-            <ol class="fs-fields clearfix">
+        <form id="myform" class="fs-form fs-form-full clearfix" autocomplete="off">
+            <ol class="fs-fields clearfix center">
                 <li data-input-trigger>
-                    <label class="fs-field-label fs-anim-upper" for="q1" data-info="This will help us know what kind of service you need">Select any one of the type</label>
-                    <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
-                        <span><input id="q1a" name="q1" type="radio" value="conversion"/><label for="q1a" class="radio-conversion ">I have business</label></span>
-                        <!--<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>-->
-                        <span><input id="q1b" name="q1" type="radio" value="mobile"/><label for="q1b" class="radio-mobile ">I want to sell product</label></span>
+                    <label class="fs-field-label fs-anim-upper font-lg" for="q1" data-info="This will help us know what kind of service you need">
+                        Welcome to <strong>Amazing Store</strong> Quick Setup
+                    </label>
+                    <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower" style="margin-top:100px;">
+                        <ul class="list-unstyled">
+                            <li style="display: inline-block">
+                                <div class="btn btn-lg btn-forForm hvr-bounce-to-right font-md">
+                                    <input id="q1a" name="q1" type="radio" value="conversion"/>
+                                    <label for="q1a" class="radio-conversion ">
+                                        I have business
+                                    </label>
+                                </div>
+                            </li>
+                            <li  style="display: inline-block;font-size:14px;" > &nbsp&nbsp&nbsp&nbsp&nbsp or &nbsp&nbsp&nbsp&nbsp&nbsp </li>
+                            <!--<span><input id="q3c" name="q3" type="radio" value="social"/><label for="q3c" class="radio-social">Become famous</label></span>-->
+                            <li style="display: inline-block">
+                                <div class="btn btn-lg btn-forForm hvr-bounce-to-right font-md">
+                                    <input id="q1a" name="q1" type="radio" value="conversion"/>
+                                    <label for="q1a" class="radio-conversion ">
+                                        I want to sell product
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </li>
-                <li data-input-trigger>
-                    <label class="fs-field-label fs-anim-upper" data-info="Select any one main category for your product">Select main category for your product</label>
-                    <select class="cs-select fs-anim-lower">
-                        <option>Select a category</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                    </select>
-                </li>
-                <li data-input-trigger>
-                    <label class="fs-field-label fs-anim-upper" data-info="Select any one main category for your product">
-                        Select sub category for your product
-                    </label>
-                    <select class="cs-select fs-anim-lower">
-                        <option>Select a sub category</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                        <option>Category 1</option>
-                    </select>
+                <li data-input-trigger style="margin-top: 0px;">
+                    <div class="col-md-12">
+                        <label class="fs-field-label fs-anim-upper font-lg" for="q2" data-info="This will help us know what kind of service you need">
+                            Select category for your product
+                        </label>
+                    </div>
+                    <div class="col-md-3 no-padding fs-anim-lower font-sm  categoryMain">
+                        <ul class="list-unstyled center-block">
+
+                            <li class="category" id="category1">Main Category 1</li>
+                            <li class="category" id="category2">Main Category 1</li>
+                            <li class="category" id="category3">Main Category 1</li>
+                            <li  class="category" id="category4">Main Category 1</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8  no-padding fs-anim-lower sub-category-list sub-category-list1">
+                        <ul class="col-md-4 no-padding col-centered list-unstyled ">
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                        </ul>
+                        <ul class="col-md-4 no-padding col-centered list-unstyled center">
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                        </ul>
+                        <ul class="col-md-4 no-padding col-centered list-unstyled center">
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                            <li class="sub-category">sub-category 1</li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
-                    <label class="fs-field-label fs-anim-upper" for="q4">Title for the product</label>
-                    <input class="fs-anim-lower" id="q4" name="q4" placeholder="Describe here" />
+                    <label class="fs-field-label fs-anim-upper pull-left" for="q4">Title for the <strong>product</strong></label>
+                    <input class="fs-anim-lower" id="q4" name="q4" placeholder="Enter title here" />
                     <br/>
-                    <label class="fs-field-label fs-anim-upper" for="q5">Decribtion of the product</label>
-                    <textarea class="fs-anim-lower" id="q5" name="q5" placeholder="Describe here"></textarea>
+                    <label class="fs-field-label fs-anim-upper font-sm pull-left" for="q5">Description of the product</label>
+                    <textarea class="fs-anim-lower font-sm" id="q5" name="q5" placeholder="Describe here"></textarea>
                 </li>
                 <li>
-                    <label class="fs-field-label fs-anim-upper" for="q6">What's your budget?</label>
-                    <input class="fs-mark fs-anim-lower" id="q6" name="q6" type="number" placeholder="1000" step="100" min="100"
+                    <label class="fs-field-label fs-anim-upper pull-left" for="q6">Price for this product?</label>
+                    <input class="fs-mark fs-anim-lower pull-left" id="q6" name="q6" type="number" placeholder="1000" step="100" min="100">
                 </li>
                 <li class="imageuploader">
-
-                    <label class="fs-field-label fs-anim-upper" for="q7">Upload picture of product</label>
-                    <div class="fileUpload btn btn-primary fs-anim-upper">
+                    <img id="blah" src="" alt="your image" class="fs-anim-upper img-responsive" />
+                    <label class="fs-field-label fs-anim-lower pull-left" for="q7">Upload picture of product</label>
+                    <div class="fileUpload btn btn-transparentWhtie fs-anim-lower">
                         <span>Upload</span>
                         <input type="file" accept="image/*"  class="fs-anim-lower upload " id="q7" >
                     </div>
-                    <img id="blah" src="" alt="your image" class="fs-anim-lower img-responsive" />
                 </li>
                 <li>
-                    <label class="fs-field-label fs-anim-upper" for="q8">Add features</label>
-                    <input class="fs-anim-lower" id="q8" name="q8" placeholder="Enter your features here"/>
-                    <br />
-                    <div class="fs-anim-lower btn btn-primary btn-sm" id="btnAdd">+</div>
+                    <label class="fs-field-label fs-anim-upper pull-left" for="q8">Add features</label>
+                    <div class="col-md-12 no-padding">
+                        <div class="col-md-11 no-padding">
+                            <input class="fs-anim-lower" id="q8" name="q8" placeholder="Enter your features here"/>
+                        </div>
+                        <div class="col-md-1 no-padding">
+                            <div class="fs-anim-lower btn btn-primary rounded font-sm btn-addforForm" id="btnAdd">+</div>
+                        </div>
+                    </div>
                     <div id="listOfFeatures">
                     </div>
-                </li>
-            </ol><!-- /fs-fields -->
-            <button class="fs-submit" type="submit">Send answers</button>
-        </form><!-- /fs-form -->
-    </div><!-- /fs-form-wrap -->
+    </li>
+    </ol><!-- /fs-fields -->
+    <button class="fs-submit" type="submit">Send answers</button>
+    </form><!-- /fs-form -->
+</div><!-- /fs-form-wrap -->
 </div><!-- /container -->
 <script src="js/form/js/classie.js"></script>
 <script src="js/form/js/selectFx.js"></script>
 <script src="js/form/js/fullscreenForm.js"></script>
 <script src="js/jquery.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $(".category").click(function() {
+            $('.category').removeClass('active');
+            $(this).addClass('active');
+
+            $(".sub-category-list").css('display', 'none');
+            $(".sub-category-list1").css('display', 'block');
+        });
+        $(".sub-category").click(function() {
+            $('.sub-category').removeClass('active');
+            $(this).addClass('active');
+        });
+//        $("#category2").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list2").css('display', 'block');
+//        });
+//        $("#category3").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list3").css('display', 'block');
+//        });
+//        $("#category4").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list4").css('display', 'block');
+//        });
+    });
+</script>
 <script>
     (function() {
         var formWrap = document.getElementById( 'fs-form-wrap' );
@@ -154,10 +221,10 @@
     $(document).on('click', '#btn-remove', function(){
         $(this).parent('p').remove();
     });
-//    $('#btn-remove').click(function() {
-//       alert();
-//        $(this).remove();
-//    });
+    //    $('#btn-remove').click(function() {
+    //       alert();
+    //        $(this).remove();
+    //    });
 </script>
 </body>
 </html>

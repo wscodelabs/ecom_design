@@ -149,7 +149,7 @@
 			this.ctrlProgress = createElement( 'div', { cName : 'fs-progress', appendTo : this.ctrls } );
 			this._showCtrl( this.ctrlProgress );
 		}
-	}
+	};
 
 	/**
 	 * addErrorMsg function
@@ -158,7 +158,7 @@
 	FForm.prototype._addErrorMsg = function() {
 		// error message
 		this.msgError = createElement( 'span', { cName : 'fs-message-error', appendTo : this.el } );
-	}
+	};
 
 	/**
 	 * init events
@@ -380,7 +380,7 @@
 			classie.add( this.ctrlNavDots[ this.current ], 'fs-dot-current' );
 			this.ctrlNavDots[ this.current ].disabled = false;
 		}
-	}
+	};
 
 	/**
 	 * showCtrl function
@@ -388,7 +388,7 @@
 	 */
 	FForm.prototype._showCtrl = function( ctrl ) {
 		classie.add( ctrl, 'fs-show' );
-	}
+	};
 
 	/**
 	 * hideCtrl function
@@ -396,7 +396,7 @@
 	 */
 	FForm.prototype._hideCtrl = function( ctrl ) {
 		classie.remove( ctrl, 'fs-show' );
-	}
+	};
 
 	// TODO: this is a very basic validation function. Only checks for required fields..
 	FForm.prototype._validade = function() {
@@ -444,7 +444,7 @@
 		}
 
 		return true;
-	}
+	};
 
 	// TODO
 	FForm.prototype._showError = function( err ) {
@@ -460,12 +460,12 @@
 		};
 		this.msgError.innerHTML = message;
 		this._showCtrl( this.msgError );
-	}
+	};
 
 	// clears/hides the current error message
 	FForm.prototype._clearError = function() {
 		this._hideCtrl( this.msgError );
-	}
+	};
 
 	// add to global namespace
 	window.FForm = FForm;
