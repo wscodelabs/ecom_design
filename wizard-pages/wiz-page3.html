@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wizard Template by Sugam Pradhan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="wizard">
+<div class="wizard-container">
+    <div class="container">
+        <div class="col-md-12">
+            <label class="col-sm-8 col-sm-offset-2 font-lg wiz-title animated fadeInUp" style="text-align:left">
+                Title for the <strong>product</strong>
+            </label>
+            <input class="col-sm-6 col-sm-offset-2 animated fadeInUp"  style="float: none;text-align: left" placeholder="Enter title here" />
+        </div>
+        <div class="col-md-12" style="margin-top: 50px">
+            <label class="col-sm-8 col-sm-offset-2 font-md wiz-title animated fadeInUp" style="text-align:left" >
+                Description of the product
+            </label>
+            <textarea class="col-sm-6 col-sm-offset-2 font-sm animated fadeInUp" style="float: none;height: 150px;" placeholder="Describe here"></textarea>
+        </div>
+    </div>
+    <div class="btn-wizard-next-wrapper">
+        <a href="wiz-page2.html"> <button class="btn  btn-wizard-next"><i class="fa fa-angle-left" aria-hidden="true"></i></button></a>
+        <a href="wiz-page4.html"> <button class="btn  btn-wizard-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></a>
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/retina-1.1.0.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $(".category").click(function() {
+            $('.category').removeClass('active');
+            $(this).addClass('active');
+
+            $(".sub-category-list").css('display', 'none');
+            $(".sub-category-list1").css('display', 'block');
+        });
+        $(".sub-category").click(function() {
+            $('.sub-category').removeClass('active');
+            $(this).addClass('active');
+        });
+//        $("#category2").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list2").css('display', 'block');
+//        });
+//        $("#category3").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list3").css('display', 'block');
+//        });
+//        $("#category4").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list4").css('display', 'block');
+//        });
+    });
+</script>
+</body>
+
+</html>

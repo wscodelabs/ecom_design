@@ -8,7 +8,8 @@ html, body {
   -webkit-font-smoothing: antialiased !important; }
 
 a, a:hover, a:active, a:visited, a:focus {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none !important; }
 
 /*--Hacks for making design awesome--*/
 .no-margin {
@@ -53,6 +54,9 @@ a, a:hover, a:active, a:visited, a:focus {
 
 .btn {
   border-radius: 0; }
+
+button {
+  outline: none !important; }
 
 /*--OG grid ends here--*/
 /*Shadows Designing*/
@@ -4130,3 +4134,116 @@ html.demo-7, .demo-7 body {
 .itemDescription-text {
   padding-top: 15px;
   font-size: 8px; }
+
+.wizard {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #1c171c;
+  padding-top: 10%; }
+  .wizard .font-lg {
+    font-size: 38px; }
+  .wizard .font-md {
+    font-size: 22px; }
+  .wizard .font-sm {
+    font-size: 18px; }
+
+.btn-forForm {
+  min-width: 280px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-weight: 300; }
+
+.btn-wizard-next {
+  font-size: 38px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding: 0 20px;
+  transition: all 0.4s ease-in-out; }
+
+.btn-wizard-next:hover {
+  border: 2px solid #FFB800;
+  color: #FFB800; }
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0); }
+
+.wizard input {
+  margin-top: 25px;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 15px;
+  color: #f2f2f2;
+  font-size: 18px;
+  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none; }
+
+.wizard input {
+  margin-top: 25px;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 15px;
+  color: #f2f2f2;
+  font-size: 18px;
+  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  outline: none; }
+
+.wizard input:focus {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  outline: none; }
+
+.wizard textarea {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: transparent;
+  color: #f2f2f2;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.2); }
+
+.wizard textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+  outline: none; }
+
+.wizard-container {
+  vertical-align: middle; }
+
+.txt-white {
+  color: white; }
+
+.bg-transparent {
+  background-color: transparent; }
+
+.bg-transparent:hover {
+  background-color: transparent !important; }
+
+.wiz-title {
+  font-weight: 100 !important;
+  font-size: 38px;
+  color: #ffffff;
+  text-align: center; }
+
+.btn-wizard-next-wrapper {
+  position: absolute;
+  right: 50px;
+  bottom: 50px; }
+
+#listOfFeatures {
+  font-size: 18px;
+  color: #f2f2f2;
+  margin-top: 20px; }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wizard Template by Sugam Pradhan</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="wizard">
+<div class="wizard-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 font-lg wiz-title animated fadeInUp">
+                <p>Select <strong>category</strong> for  product</p>
+            </div>
+        </div>
+        <div class="animated fadeInUp">
+            <div class="col-md-2 no-padding fs-anim-lower font-sm  categoryMain animated fadeInLeft">
+                <ul class="list-unstyled center-block">
+                    <li class="category" id="category1">Main Category 1</li>
+                    <li class="category" id="category2">Main Category 1</li>
+                    <li class="category" id="category3">Main Category 1</li>
+                    <li  class="category" id="category4">Main Category 1</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-8  no-padding fs-anim-lower sub-category-list sub-category-list1 ">
+            <ul class="col-md-4 no-padding col-centered list-unstyled animated ">
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+            </ul>
+            <ul class="col-md-4 no-padding col-centered list-unstyled center animated">
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+            </ul>
+            <ul class="col-md-4 no-padding col-centered list-unstyled center animated">
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+                <li class="sub-category">sub-category 1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="btn-wizard-next-wrapper">
+        <a href="wiz-page1.html"> <button class="btn  btn-wizard-next"><i class="fa fa-angle-left" aria-hidden="true"></i></button></a>
+       <a href="wiz-page3.html"> <button class="btn  btn-wizard-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></a>
+    </div>
+</div>
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/retina-1.1.0.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+        $(".category").click(function() {
+            $('.category').removeClass('active');
+            $(this).addClass('active');
+
+            $(".sub-category-list").css('display', 'none');
+            $(".sub-category-list1").css('display', 'block');
+        });
+        $(".sub-category").click(function() {
+            $('.sub-category').removeClass('active');
+            $(this).addClass('active');
+        });
+//        $("#category2").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list2").css('display', 'block');
+//        });
+//        $("#category3").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list3").css('display', 'block');
+//        });
+//        $("#category4").click(function() {
+//            $(".sub-category-list").css('display', 'none');
+//            $(".sub-category-list4").css('display', 'block');
+//        });
+    });
+</script>
+</body>
+
+</html>
