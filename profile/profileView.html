@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Profile View</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- jQuery library -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/6e65768810.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<body>
+<div>
+    <section class="top">
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Link</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </section><!--End of top-->
+    <div class="mid clearfix">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-3">
+                    <div>
+                        <img src="../images/profilePic.jpg" height="233px" width="233px;">
+                    </div>
+                    <div>
+                        <h4>Piyoush Thapa</h4>
+                    </div>
+                    <div>
+                        <a>Add your info</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <p><i class="fa fa-clock-o" aria-hidden="true" style="vertical-align: middle"></i>&nbsp Joined on Sep 18, 2015 </p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="">
+                        <div class="user-profile-nav ">
+                            <ul class="underline-nav nav nav-pills">
+                                <li class="underline-nav-item active"><a data-toggle="pill" href="#myProducts">My products <span class="badge">5</span></a></li>
+                                <li class="underline-nav-item"><a data-toggle="pill" href="#savedProducts">Saved products <span class="badge">5</span> </a></li>
+                                <li class="underline-nav-item"><a data-toggle="pill" href="#followers">Followers <span class="badge">5</span></a></li>
+                                <li class="underline-nav-item"><a data-toggle="pill" href="#following">Following <span class="badge">5</span> </a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="myProducts" class="tab-pane fade in active">
+                                <p>My products</p>
+                                <div class="">
+                                    <div class="items">
+                                        <ul class="og-grid">
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                            <li class="card l-product">
+                                                <div class="product-image">
+                                                    <img src="../images/product.png" class=" center-block">
+                                                </div>
+                                                <div class="product-description">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                                </div>
+                                                <div class="product-price">
+                                                    <h4>$200</h4>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="savedProducts" class="tab-pane fade">
+                                <div class="l-listView border clearfix">
+                                    <div class="c-listView col-md-12 no-padding">
+                                        <div class="c-image col-sm-2 center">
+                                            <img src="../images/product.png" height="100px" width="">
+                                        </div>
+                                        <div class="c-description col-sm-4">
+                                            <div class="c-description-title center">
+                                                <p>Prodcut Title</p>
+                                            </div>
+                                            <div class="c-description-text">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi consequuntur enim, eos id iste maiores odit perferendis quasi tempora unde velit voluptatem.</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="c-user col-sm-3 center no-padding">
+                                            <p>By : Piyoush Thapa</p>
+                                        </div>
+                                        <div class="c-price col-sm-1 center no-padding">
+                                            <p>$4000.00</p>
+                                        </div>
+                                        <div class="c-actions col-sm-2 no-padding center">
+                                            <a href="">
+                                                <button class="btn  btn-purple"><i class="fa fa-shopping-cart "></i> &nbsp Buy</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="followers" class="tab-pane fade">
+                               <div class="l-listView border clearfix">
+                                <div class="c-listView col-md-12 no-padding">
+                                    <div class="c-image col-sm-2">
+                                        <img src="../images/profilePic.jpg" height="60px" width="">
+                                    </div>
+                                    <div class="c-description col-sm-8 no-float">
+                                        <div class="c-description-title">
+                                            <p>Sugam Pradhan</p>
+                                        </div>
+                                        <div class="c-description-text ">
+                                            <p><i class="fa fa-map-marker" aria-hidden="true"></i> New York - Los Angeles - Paris</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="c-actions col-sm-2 no-padding center no-float">
+                                        <a href="">
+                                            <button class="btn  btn-purple"><i class="fa fa-hand-o-left" aria-hidden="true"></i>&nbsp Follow</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div id="following" class="tab-pane fade">
+                                <div class="l-listView border clearfix">
+                                    <div class="c-listView col-md-12 no-padding">
+                                        <div class="c-image col-sm-2">
+                                            <img src="../images/profilePic.jpg" height="60px" width="">
+                                        </div>
+                                        <div class="c-description col-sm-8 no-float">
+                                            <div class="c-description-title">
+                                                <p>Sugam Pradhan</p>
+                                            </div>
+                                            <div class="c-description-text ">
+                                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> New York - Los Angeles - Paris</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="c-actions col-sm-2 no-padding center no-float">
+                                            <a href="">
+                                                <button class="btn  btn-purple"><i class="fa fa-hand-o-left" aria-hidden="true"></i>&nbsp Follow</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div><!--End of mid-->
+
+    <!--<footer id="footer">-->
+    <!--<div class="container center">-->
+    <!--<div class="col-sm-12 l-wrapper ">-->
+    <!--<a class="facebook" href="https://www.facebook.com/itdeurali" target="_blank">-->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">-->
+    <!--<rect x="13" y="13" fill="#EEEEEE" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 73.0976 30.4134)" width="36" height="36">-->
+    <!--</rect>-->
+    <!--<path fill="#000000" d="M31.8,40.3h-3.7v-10h-2.5v-3.4l2.5,0l0-2c0-2.8,0.8-4.5,4.1-4.5h2.8v3.4h-1.7c-1.3,0-1.4,0.5-1.4,1.4l0,1.7h3.1l-0.4,3.4l-2.7,0L31.8,40.3L31.8,40.3z">-->
+    <!--</path>-->
+    <!--</svg>-->
+    <!--</a>-->
+
+    <!--<a class="twitter" href="http://twitter.com/" target="_blank">-->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">-->
+    <!--<rect x="13" y="13" fill="#EEEEEE" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 73.0976 30.4134)" width="36" height="36">-->
+
+    <!--</rect>-->
+    <!--<path fill="#000000" d="M41.076,23.131c-0.814,0.36-1.691,0.605-2.611,0.715c0.938-0.562,1.658-1.453,1.998-2.514c-0.877,0.521-1.852,0.899-2.885,1.103C36.75,21.552,35.566,21,34.26,21c-2.508,0-4.543,2.034-4.543,4.544c0,0.357,0.039,0.703,0.117,1.035c-3.777-0.189-7.125-1.999-9.367-4.747c-0.391,0.67-0.615,1.45-0.615,2.284c0,1.576,0.803,2.968,2.021,3.783c-0.744-0.024-1.443-0.229-2.057-0.569c-0.002,0.019-0.002,0.039-0.002,0.058c0,2.202,1.566,4.038,3.645,4.456c-0.381,0.104-0.783,0.16-1.197,0.16c-0.293,0-0.576-0.028-0.855-0.083c0.58,1.805,2.258,3.119,4.246,3.156c-1.557,1.219-3.516,1.945-5.643,1.945c-0.369,0-0.73-0.022-1.086-0.063c2.012,1.289,4.4,2.041,6.967,2.041c8.357,0,12.93-6.925,12.93-12.931c0-0.197-0.004-0.393-0.014-0.587C39.695,24.841,40.465,24.041,41.076,23.131L41.076,23.131z">-->
+
+    <!--</path>-->
+    <!--</svg>-->
+    <!--</a>-->
+
+    <!--<a class="instagram" href="http://instagram.com/" target="_blank">-->
+    <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">-->
+    <!--<rect x="12" y="12" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" fill="#EEEEEE" width="36" height="36"/>-->
+    <!--<path d="M36.5,19.3H23.5c-2.3,0-4.1,1.8-4.1,4.1v4.4v8.7c0,2.3,1.9,4.1,4.1,4.1h13.1c2.3,0,4.1-1.8,4.1-4.1v-8.7v-4.4C40.7,21.2,38.8,19.3,36.5,19.3z M37.7,21.8l0.5,0v0.5v3.1l-3.6,0l0-3.6L37.7,21.8z                                          M27,27.8c0.7-0.9,1.8-1.6,3-1.6s2.4,0.6,3,1.6c0.4,0.6,0.7,1.4,0.7,2.2c0,2.1-1.7,3.8-3.8,3.8s-3.8-1.7-3.8-3.8C26.2,29.2,26.5,28.4,27,27.8z M38.6,36.5c0,1.1-0.9,2-2,2H23.5c-1.1,0-2-0.9-2-2v-8                                                        .7h3.2c-0.3,0.7-0.4,1.4-0.4,2.2c0,3.2,2.6,5.8,5.8,5.8c3.2,0,5.8-2.6,5.8-5.8c0-0.8-0.2-1.5-0.4-2.2h3.2V36.5z"/>-->
+    <!--</svg>-->
+    <!--</a>-->
+    <!--<a class="tumblr" href="http://www.tumblr.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-43 0 60 60" width="60" height="60">-->
+    <!--<rect x="-18" y="-18" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -12.4264 30)" fill="#EEEEEE" width="36" height="36"/>-->
+    <!--<path fill="#B03460" d="M-12.1,21v5h4.7v3.1h-4.7v5.1c0,1.2,0.1,1.9,0.2,2.2c0.1,0.3,0.3,0.6,0.7,0.8c0.4,0.3,0.9,0.4,1.5,0.4-->
+    <!--c1,0,2-0.3,3-1v3.2c-0.9,0.4-1.6,0.7-2.3,0.8c-0.7,0.2-1.4,0.2-2.2,0.2c-0.9,0-1.7-0.1-2.4-0.3c-0.7-0.2-1.3-0.6-1.8-1-->
+    <!--c-0.5-0.4-0.8-0.9-1-1.4c-0.2-0.5-0.3-1.2-0.3-2.1v-7H-19v-2.8c0.8-0.3,1.5-0.6,2-1.1c0.6-0.5,1-1,1.3-1.7c0.3-0.7,0.6-1.5,0.7-2.5-->
+    <!--H-12.1z"/>-->
+    <!--</svg>-->
+    <!--</a>-->
+    <!--</div>-->
+    <!--<div class="col-sm-12">-->
+    <!--Designed by <a target="_blank" href="http://www.sugampradhan061.com.np/">sugampradhan061@gmail.com</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</footer>-->
+
+</div><!--End of container-->
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+
+<script src="../js/custom.js"></script>
+<script>
+    (function() {
+        var docElem = window.document.documentElement, didScroll, scrollPosition,
+                container = document.getElementById( 'container' );
+
+        // trick to prevent scrolling when opening/closing button
+        function noScrollFn() {
+            window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+        }
+
+        function noScroll() {
+            window.removeEventListener( 'scroll', scrollHandler );
+            window.addEventListener( 'scroll', noScrollFn );
+        }
+
+        function scrollFn() {
+            window.addEventListener( 'scroll', scrollHandler );
+        }
+
+        function canScroll() {
+            window.removeEventListener( 'scroll', noScrollFn );
+            scrollFn();
+        }
+
+        function scrollHandler() {
+            if( !didScroll ) {
+                didScroll = true;
+                setTimeout( function() { scrollPage(); }, 60 );
+            }
+        };
+
+        function scrollPage() {
+            scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+            didScroll = false;
+        };
+
+        scrollFn();
+
+        var el = document.querySelector( '.morph-button' );
+
+        new UIMorphingButton( el, {
+            closeEl : '.icon-close',
+            onBeforeOpen : function() {
+                // don't allow to scroll
+                noScroll();
+                // push main container
+                classie.addClass( container, 'pushed' );
+            },
+            onAfterOpen : function() {
+                // can scroll again
+                canScroll();
+                // add scroll class to main el
+                classie.addClass( el, 'scroll' );
+            },
+            onBeforeClose : function() {
+                // remove scroll class from main el
+                classie.removeClass( el, 'scroll' );
+                // don't allow to scroll
+                noScroll();
+                // push back main container
+                classie.removeClass( container, 'pushed' );
+            },
+            onAfterClose : function() {
+                // can scroll again
+                canScroll();
+            }
+        } );
+    })();
+</script>
+<!--script for chat box-->
+<script>
+    $(document).ready(function(){
+        $(".chat-chatter").on('click',function(){
+            var id = $(this).attr('id');
+            $(".chat-section").addClass("transform-chat");
+            $(".chat-section2").addClass("transform-chat");
+        });
+        $("#backToChatter").on('click',function(){
+            $(".chat-section").removeClass("transform-chat");
+            $(".chat-section2").removeClass("transform-chat");
+        });
+        $("#chat-msg").keyup(function (e) {
+            if (e.keyCode == 13) {
+                text=($(this).val());
+
+                $('.chat-chatter-wrapper').append(
+                        "<ul class='chat-chatter-content list-unstyled' style='text-align: right'>"+
+                        "<li class='chat-chatter-text'>"+
+                        "<p class='speech-sent'>"+text+
+                        "</p>"+
+                        "</li>"+
+                        "<li style='vertical-align: sub'>"+
+                        "<div class='chat-thumb '>"+
+                        "<img src='images/chatter.jpg' height='34' width='34' class='img-responsive img-circle'>"+
+                        "</div>"+
+                        "</li>"+
+                        "</ul>"
+                );
+                $(this).val(' ');
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
