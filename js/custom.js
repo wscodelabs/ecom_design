@@ -8,8 +8,8 @@ $( document ).ready(function() {
 //console.log(menuPosition);
     var placeholder = document.createElement('div');
 //console.log(placeholder);
-    placeholder.style.width = menuPosition.width-100 + 'px';
-    placeholder.style.height = menuPosition.height+7 + 'px';
+    placeholder.style.width = menuPosition.width+ 'px';
+    placeholder.style.height = menuPosition.height+5 + 'px';
     var isAdded = false;
 
     window.addEventListener('scroll', function() {
@@ -73,14 +73,14 @@ $( document ).ready(function() {
         var element =  $("#FilterNav");
         element.css('right','0');
         $("#main").css(
-            {"margin-right": "250px", "margin-left": "-250px"});
+            {"margin-right": "99px", "margin-left": "-250px"});
         element.addClass('navOpen');
     }
     function openChatNav() {
         var element =  $("#myChatnav");
         element.css('right','0');
         $("#main").css(
-            {"margin-right": "250px", "margin-left": "-250px"});
+            {"margin-right": "99px", "margin-left": "-250px"});
         element.addClass('navOpen');
     }
 
