@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Amazing Store</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/6e65768810.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="chatMain">
+<div class="chatMain-navbar">
+    <div class="">
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="color:#000000!important" >ChatUi</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!--<ul class="nav navbar-nav">-->
+                    <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+                    <!--<li><a href="#">Link</a></li>-->
+                    <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                    <!--<li><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></li>-->
+                    <!--</ul>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a></li>
+                        <!--<li class="dropdown">-->
+                        <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                        <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li><a href="#">Separated link</a></li>-->
+                        <!--</ul>-->
+                        <!--</li>-->
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+</div>
+<div class="chatMain-left">
+    <div class="navbar">
+        <nav>
+            <div id="myChatnav" class="sidenav-left">
+                <div class="l-wrapper">
+                    <div class="side-chatNav-wrapper center clearfix">
+                        <div class="chat-navs clearfix">
+                            <ul class="list-unstyled col-sm-12 no-padding">
+                                <li class="col-sm-6 no-padding active"><a href="">Buy</a></li>
+                                <li class="col-sm-6 no-padding"><a href="">Sell</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 search">
+                            <span class="fa fa-search"></span>
+                            <input placeholder="Search term">
+                        </div>
+                    </div>
+                    <div class="chat-section">
+                        <!--<div class="chat-day">-->
+                        <!--<p>TODAY</p>-->
+                        <!--</div>-->
+                        <div class="chat-chatter" id="">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li style="display: inline-block">
+                                                    <div class="chat-thumb ">
+                                                        <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                                    </div>
+                                                </li>
+                                                <li style="display: inline-block">
+                                                    <div class="chat-chatter-name">
+                                                        Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                                    </div>
+                                                    <div class="chat-chatter-msg ">
+                                                        Hey what's up?
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter1">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter2">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter3">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter4">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter5">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter6">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter7">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter8">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter9">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter10">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter11">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter12">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-chatter" id="chatter13">
+                            <div class="chat-chatter-wrapper-fix">
+                                <div class="chat-chatter-wrapper ">
+                                    <ul class="chat-chatter-content list-unstyled ">
+                                        <li style="vertical-align: sub">
+                                            <div class="chat-thumb ">
+                                                <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                            </div>
+                                        </li>
+                                        <li class="chat-chatter-info ">
+                                            <div class="chat-chatter-name">
+                                                Sugam Pradhan &nbsp;<i class="fa fa-circle text-success"></i>
+                                            </div>
+                                            <div class="chat-chatter-msg ">
+                                                Hey what's up?
+                                            </div>
+                                        </li>
+                                        <li class="chat-time pull-right">
+                                            <div class=" clearfix  pull-right">
+                                                <p>8.22 AM</p>
+                                                <p class="pull-right"><span class="badge">4</span></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div><!--End of chat chatter-wrapper-->
+                            </div><!--End of chat chatter wrapper fix-->
+                        </div><!--End of chat chatter-->
+                    </div><!--End of chat section-->
+                </div><!--End of l-wrapper-->
+            </div><!--End of sidenav left -->
+        </nav>
+    </div><!--End of navbar-->
+</div><!--End of chatMain-left-->
+<div class="chatMain-right clearfix">
+    <div class="navbar clearfix">
+        <div class="sidenav-right clearfix">
+            <div class="l-wrapper">
+                <div class="center">
+                    <div class="overlay-itemDetail col-sm-12">
+                        <div class="col-sm-12">
+                            <div class="overlay-itemImage">
+                                <img src="images/product.png" height="100" width="">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="overlay-itemDescription">
+                                <div class="itemDescription-stars">
+                                    <ul class="list-unstyled">
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 no-padding">
+                                    <div class="itemDescription-reviewNumber pull-right">
+                                        21 reviews
+                                    </div>
+                                    <div class="itemDescription-price pull-left">
+                                        $4.00
+                                    </div>
+                                </div>
+                                <div class="itemDescription-title">
+                                    <h5>Misha All Around Safe Block Sebum Zero Sun</h5>
+                                </div>
+                                <!--<div class="itemDescription-addToCart btn-purple center clearfix">-->
+                                <!--<button class="btn btn-lg btn-purple col-sm-12">-->
+                                <!--<i class="fa fa-shopping-cart col-sm-1" aria-hidden="true"></i>&nbspADD TO MY CART-->
+                                <!--</button>-->
+                                <!--</div>-->
+                                <div class="itemDescription-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolore doloremque eos, est exercitationem incidunt laborum molestias necessitatibus obcaecati perferendis porro quae quas quidem reiciendis reprehenderit repudiandae sit suscipit unde!</p>
+                                </div>
+                            </div><!--End of item Description-->
+                        </div><!--End of col-sm-12-->
+                    </div><!--End of itemdetail -->
+                </div><!--End of detail-->
+            </div><!--End of l-wrapper-->
+        </div><!--End of sidenav right -->
+    </div><!--End of navbar-->
+</div><!--End of chatMain-right-->
+<div class="chatMain-mid">
+    <div  class="sidenav-mid">
+        <div class="">
+            <div class="chat-chatter">
+                <div class="chat-chatter-wrapper-fix">
+                    <div class="chat-chatter-wrapper chatMain-mid-chat">
+                        <ul class="chat-chatter-content list-unstyled clearfix">
+                            <li style="vertical-align: sub">
+                                <div class="chat-thumb ">
+                                    <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                </div>
+                            </li>
+                            <li class="chat-chatter-text speech-receive">
+                                <p>Hey waats up??</p>
+                            </li>
+                        </ul>
+                        <ul class="chat-chatter-content list-unstyled clearfix">
+                            <li style="vertical-align: sub">
+                                <div class="chat-thumb ">
+                                    <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                </div>
+                            </li>
+                            <li class="chat-chatter-text speech-receive">
+                                <p>Hey waats up??</p>
+                            </li>
+                        </ul>
+                        <ul class="chat-chatter-content list-unstyled clearfix">
+                            <li class="pull-right" style="vertical-align: sub">
+                                <div class="chat-thumb pull-right">
+                                    <img src="images/chatter.jpg" height="50" width="50" class="img-responsive">
+                                </div>
+                            </li>
+                            <li class="chat-chatter-text speech-sent pull-right">
+                                <p>Hey waats up??</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="chatMain-bottom">
+    <div class="navbar">
+        <nav>
+            <div class="sidenav-bottom">
+                <div class="l-wrapper">
+                    <div class="side-chatNav-wrapper center clearfix">
+                        <div class="chatMain-bottom-send-message">
+                            <span><i class="fa fa-smile-o" aria-hidden="true"></i></span>
+                            <input id="chat-msg" type="text" placeholder="Type a messagex">
+                            <span><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<script>
+    $("#chat-msg").keyup(function (e) {
+        if (e.keyCode == 13) {
+            text=($(this).val());
+            $('.chatMain-mid-chat').append(
+                "<ul class='chat-chatter-content list-unstyled clearfix'>" +
+                    "<li class='pull-right' style='vertical-align: sub'>" +
+                        "<div class='chat-thumb pull-right'>"+
+                            "<img src='images/chatter.jpg' height='50' width='50' class='img-responsive'>"+
+                        "</div>"+
+                    "</li>"+
+                    "<li class='chat-chatter-text speech-sent pull-right'>"+
+                        "<p>"+text+ "</p>"+
+                    "</li>"+
+                "</ul>"
+        );
+            $(this).val(' ');
+        }
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        var chatSectionId = $('.chat-section');
+        var windowHeight= $(window).height();
+        console.log(windowHeight);
+        var chatSectionHeight = windowHeight - 157 +'px';
+        console.log(chatSectionHeight);
+        chatSectionId.css('height',chatSectionHeight);
+        chatSectionId.css('overflow-y','scroll');
+        chatSectionId.css('overflow-x','hidden');
+
+        var chatMidId= $('.chatMain-mid');
+        var chatMidHeight = windowHeight - 128 +'px';
+        chatMidId.css('height',chatMidHeight);
+        chatMidId.css('overflow-y','scroll');
+        chatMidId.css('overflow-x','hidden');
+    });
+</script>
+</body>
+</html>
